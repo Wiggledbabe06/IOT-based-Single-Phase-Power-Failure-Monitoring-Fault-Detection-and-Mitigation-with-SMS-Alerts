@@ -184,21 +184,21 @@ Now we will use the current , voltage and frequency data accumulated from the se
 
 **Overcurrent Protection AC Current Detection Sensor**
 
-|Serial No. |	Pin no. / Name |	Pin no. / Name|
-|:-------------: | :-------------: | :------------:|
-|1.	|Normally Open |	To load|
-|2.	|Common	| From 5V|
-|3.	|Normally Closed |	None|
-|4.	|5V	| 5V|
-|5.|	GND	|GND|
+|Serial No.      |	Pin no. / Name |	Pin no. / Name|
+|:-------------: | :-------------: |  :------------:|
+|       1.	     |   Normally Open |    To load     |
+|       2.	     |     Common	     |    From 5V     |
+|       3.	     | Normally Closed |	   None       |
+|       4.	     |       5V      	 |      5V        |
+|       5.       |	    GND	       |      GND       |
 
 
 
 **SIM800L GSM GPRS Module**
 
-| Serial No.     |	Pin no. / Name |	Pin no. / Name            |
-|:-------------: | :-------------: | :------------:             |
-|     1.         |	NET            |	Attached a Helical antenna|
+| Serial No.     |	Pin no. / Name |	    Pin no. / Name        |
+|:-------------: | :-------------: |      :------------:        |
+|     1.         |	NET            |	Attach a Helical antenna  |
 |     2.	       |  VCC            |	5V                        |
 |     3.	       |  RST            |	None                      |
 |     4.         |	RXD            |	D2 of the Arduino         |
@@ -206,3 +206,63 @@ Now we will use the current , voltage and frequency data accumulated from the se
 |     6.         |	GND	           | GND                        |
 
 </div>
+
+**Code for the project is attached in the main file**
+
+## Project Demonstration
+<div align="center">
+  
+**Prototype model**
+  
+</div>
+<p align="center">
+
+<img src ="https://github.com/Wiggledbabe06/IOT-based-Single-Phase-Power-Failure-Monitoring-Fault-Detection-and-Mitigation-with-SMS-Alerts/assets/98098708/6eee07d0-1f2e-492b-94f6-e86c216a709a" width="500" height = "500">
+
+</p>
+<div align="center">
+  
+  **Working of the prototype**
+</div>
+<p align="center">
+
+<img src ="https://github.com/Wiggledbabe06/IOT-based-Single-Phase-Power-Failure-Monitoring-Fault-Detection-and-Mitigation-with-SMS-Alerts/assets/98098708/c8b9f1d6-274d-4996-8f68-254c8bf02dd0" width="500" height = "300">
+
+</p>
+<div align="center">
+  
+  **Serial Monitor output**
+</div>
+<p align="center">
+
+<img src ="https://github.com/Wiggledbabe06/IOT-based-Single-Phase-Power-Failure-Monitoring-Fault-Detection-and-Mitigation-with-SMS-Alerts/assets/98098708/80ad3321-a078-4d12-ad1c-c21be182a4b8" width="500" height = "700">
+
+</p>
+
+## Summary
+
+With this demonstration we proved the efficiency of IoT in single phase applications. Voltage, Current & frequency monitoring can prevent damage to devices and equipments. With 12V 5A overcurrent protection module we demonstrated that even if the relay fails the circuit can be cut off and devices / equipments will be saved autonomously without any signal from the microcontroller. With SMS alerts many economic benefits like damage prevention , low downtime , increases power factor and efficiency , ZMPT101B module is very accurate and can deliver output even when perfect sign waves are not coming from the supply , ASC712 current sensor module is a cheap alternative to expensive ammeter , through it needs to be put in series , Arduino Uno constrained us because of its very LOW rom size and minimum processing abilities , We used voltage regulator to demonstrate fluctuating voltage and show the breaking of circuit. We used 4 x 200w bulbs in parallel to demonstrate overloading scenarios.
+
+
+## Cost Analysis
+
+|   Serial no.	 |     Component name              |	Price( in rs.) |
+|:-------------: |     :-------------:             |  :------------: |
+|     1.	       |       Arduino Uno	             |       650       |
+|     2.	       |  ZMPT101B voltage Sensor        |	     120       |
+|     3.	       |       ACS712 20A	               |        90       |
+|     4.	       |        5V Relay	               |       100       |
+|     5.	       |  Overcurrent protection module	 |       450       |
+|     6.         |	       Oled 	                 |       450       |
+|     7.	       |       Switches x 4	             |        80       |
+|     8.	       |      200W Bulb x 4	             |       120       |
+|     9.	       |     Bulb holder x 4	           |       150       |
+|     10.	       |   12V 0.6 amp supply	           |       250       |
+|     11.	       |   12V 2 amp supply	             |       300       |
+|     12.	       |   Voltage Regulator	           |        50       |
+|     13.	       |  SIM800L GSM GPRS module	       |       500       |
+|     14.	       |  DC-DC buck convertor	         |       200       |
+|     15.	       |     Breadboard x 2 	           |        90       |
+|    Total	     |                    3600                           |
+
+

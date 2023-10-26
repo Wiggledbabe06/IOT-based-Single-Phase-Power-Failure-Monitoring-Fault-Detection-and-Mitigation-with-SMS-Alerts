@@ -246,23 +246,26 @@ With this demonstration we proved the efficiency of IoT in single phase applicat
 
 ## Cost Analysis
 
-|   Serial no.	 |     Component name              |	Price( in rs.) |
-|:-------------: |     :-------------:             |  :------------: |
-|     1.	       |       Arduino Uno	             |       650       |
-|     2.	       |  ZMPT101B voltage Sensor        |	     120       |
-|     3.	       |       ACS712 20A	               |        90       |
-|     4.	       |        5V Relay	               |       100       |
-|     5.	       |  Overcurrent protection module	 |       450       |
-|     6.         |	       Oled 	                 |       450       |
-|     7.	       |       Switches x 4	             |        80       |
-|     8.	       |      200W Bulb x 4	             |       120       |
-|     9.	       |     Bulb holder x 4	           |       150       |
-|     10.	       |   12V 0.6 amp supply	           |       250       |
-|     11.	       |   12V 2 amp supply	             |       300       |
-|     12.	       |   Voltage Regulator	           |        50       |
-|     13.	       |  SIM800L GSM GPRS module	       |       500       |
-|     14.	       |  DC-DC buck convertor	         |       200       |
-|     15.	       |     Breadboard x 2 	           |        90       |
-|    Total	     |                    3600                           |
+<div align="center">
 
+|   Serial no.	 |     Component name              |	Price( in Rs.) |
+|:-------------: |     :-------------:             |  :------------: |
+|     1.	       |       Arduino Uno	             |      ₹650       |
+|     2.	       |  ZMPT101B voltage Sensor        |	    ₹120       |
+|     3.	       |       ACS712 20A	               |       ₹90       |
+|     4.	       |        5V Relay	               |      ₹100       |
+|     5.	       |  Overcurrent protection module	 |      ₹450       |
+|     6.         |	       Oled 	                 |      ₹450       |
+|     7.	       |       Switches x 4	             |       ₹80       |
+|     8.	       |      200W Bulb x 4	             |      ₹120       |
+|     9.	       |     Bulb holder x 4	           |      ₹150       |
+|     10.	       |   12V 0.6 amp supply	           |      ₹250       |
+|     11.	       |   12V 2 amp supply	             |      ₹300       |
+|     12.	       |   Voltage Regulator	           |       ₹50       |
+|     13.	       |  SIM800L GSM GPRS module	       |      ₹500       |
+|     14.	       |  DC-DC buck convertor	         |      ₹200       |
+|     15.	       |     Breadboard x 2 	           |       ₹90       |
+|    Total	     |                    ₹3600                           |
+
+</div>
 

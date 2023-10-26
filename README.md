@@ -269,3 +269,6 @@ With this demonstration we proved the efficiency of IoT in single phase applicat
 
 </div>
 
+## Contributions
+
+Contributions, issues, and feature requests are welcome. If you find any issues or want to improve the project, please feel free to submit a pull request or open an issue.

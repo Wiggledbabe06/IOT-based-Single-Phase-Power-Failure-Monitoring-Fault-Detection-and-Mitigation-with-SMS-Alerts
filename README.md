@@ -95,7 +95,7 @@ Now we will use the current , voltage and frequency data accumulated from the se
 
 ## Methodology
 
-**Schematic Diagram of the circuit**
+### Schematic Diagram of the circuit
 
 <p align="center">
 
@@ -103,83 +103,106 @@ Now we will use the current , voltage and frequency data accumulated from the se
 
 </p>
 
-**Connections**
+### Connections
+
 <div align="center">
-Arduino Uno
-Serial no.	Pin no. / Name	Pin no. / Name
-1.	Vin	Positive terminal of 12V supply
-2.	GND	Negative terminal of 12V supply
-3.	A1	Output of ZMPT101B current sensor
-4.	A2	Output of ACS712B current sensor
-5.	D2	Rx of SIM800L GSM GPRs module
-6.	D3	Tx of SIM800L GSM GPRS module
-7.	D7	Signal In of relay
-8.	D13	RES of OLED display
-9.	D12	CS of OLED display
-10.	D11	DC of OLED display
-11.	D10	SCK of OLED display
-12.	D9	SDA of OLED display
+  
+**Arduino Uno**
 
-ZMPT101B
-Serial no.	Pin no. / Name	Pin no. / Name
-1.	Source V in	In parallel with the Main Supply
-2.	Source V out	In parallel with the Main Supply
-3.	5V	5V
-4.	GND	GND
-5.	Signal Out	A1 of the Arduino
-
-ACS712B
-Serial no.	Pin no. / Name	Pin no. / Name
-1.	Source V in	In series with positive terminal of the main Supply
-2.	Source V out	To relay
-3.	5V	5V
-4.	GND	GND
-5.	Signal Out	A2 of the Arduino
-
-OLED display
-Serial no.	Pin no. / Name	Pin no. / Name
-1	GND	GND
-2.	VDD	5V
-3.	SCK	10
-4.	SDA	9
-5.	REC	13
-6.	DC	11
-7.	CS	12
+|Serial no.|	Pin no. / Name	|Pin no. / Name|
+|:-------------: | :-------------: | :------------:|
+|1.|	Vin	|Positive terminal of 12V supply|
+|2.|	GND	|Negative terminal of 12V supply|
+|3.|	A1	|Output of ZMPT101B current sensor|
+|4.|	A2	|Output of ACS712B current sensor|
+|5.|	D2	|Rx of SIM800L GSM GPRs module|
+|6.|	D3	|Tx of SIM800L GSM GPRS module|
+|7.|	D7	|Signal In of relay|
+|8.|	D13	|RES of OLED display|
+|9.|	D12	|CS of OLED display|
+|10.|	D11	|DC of OLED display|
+|11.|	D10	|SCK of OLED display|
+|12.|	D9	|SDA of OLED display|
 
 
-5V Relay
-Serial No.	Pin no. / Name	Pin no. / Name
-1.	Normally Open	To load
-2.	Common	From Overcurrent Protection AC current Detection Sensor
-3.	Normally Closed	None
-4.	5V	5V
-5.	GND	GND
-6.	Signal In	D7 of the Arduino
+**ZMPT101B**
 
-DC-DC buck converter
-Serial No.	Pin no. / Name	Pin no. / Name
-1.	V in +	From 12 V + supply
-2.	V in -	From 12V – supply
-3.	V out +	To GSM VIN
-4.	V out -	To GSM GND
+|Serial no.	|Pin no. / Name|	Pin no. / Name|
+|:-------------: | :-------------: | :------------:|
+|1.|	Source V in|	In parallel with the Main Supply|
+|2.|	Source V out|	In parallel with the Main Supply|
+|3.|	5V|	5V|
+|4.|GND|	GND|
+|5.|	Signal Out	A1 of the Arduino|
 
-Overcurrent Protection AC Current Detection Sensor
-Serial No.	Pin no. / Name	Pin no. / Name
-1.	Normally Open	To load
-2.	Common	From 5V
-3.	Normally Closed	None
-4.	5V	5V
-5.	GND	GND
 
-| SIM800L GSM GPRS Module |
-|:-------------: | :-------------: | :------------: |
-| Serial No.|	Pin no. / Name|	Pin no. / Name|
-|:-------------: | :-------------: | :------------: |
-|1.|	NET|	Attached a Helical antenna|
-|2.	|VCC|	5V|
-|3.	|RST|	None|
-|4.|	RXD|	D2 of the Arduino|
-|5.	|TXD	|D3 of the Arduino|
-|6.|	GND	|GND|
+**ACS712B**
+
+|Serial no.|	Pin no. / Name|	Pin no. / Name|
+|:-------------: | :-------------: | :------------:|
+|1.|	Source V in|	In series with positive terminal of the main Supply|
+|2.|	Source V out|	To relay|
+|3.|	5V|	5V|
+|4.|	GND	|GND|
+|5.|	Signal Out|	A2 of the Arduino|
+
+
+**OLED display**
+
+|Serial no.	|Pin no. / Name	|Pin no. / Name|
+|:-------------: | :-------------: | :------------:|
+|1	|GND	|GND|
+|2.|	VDD|	5V|
+|3.|	SCK|	10|
+|4.|	SDA|	9|
+|5.|	REC|	13|
+|6.	|DC|	11|
+|7.	|CS	|12|
+
+
+**5V Relay**
+
+|Serial No.|	Pin no. / Name	 |Pin no. / Name|
+|:-------------: | :-------------: | :------------:|
+|1.|	Normally Open	|To load|
+|2.|	Common	|From Overcurrent Protection AC current Detection Sensor|
+|3.|	Normally Closed	|None|
+|4.|	5V	|5V|
+|5.|	GND	|GND|
+|6.	|Signal In|	D7 of the Arduino|
+
+
+**DC-DC buck converter**
+
+|Serial No. |	Pin no. / Name |	Pin no. / Name |
+|:-------------: | :-------------: | :------------:|
+|1.|	V in + |	From 12 V + supply|
+|2.|	V in - |	From 12V – supply |
+|3.|	V out + |	To GSM VIN |
+|4.|	V out -	|To GSM GND |
+
+
+**Overcurrent Protection AC Current Detection Sensor**
+
+|Serial No. |	Pin no. / Name |	Pin no. / Name|
+|:-------------: | :-------------: | :------------:|
+|1.	|Normally Open |	To load|
+|2.	|Common	| From 5V|
+|3.	|Normally Closed |	None|
+|4.	|5V	| 5V|
+|5.|	GND	|GND|
+
+
+
+**SIM800L GSM GPRS Module**
+
+| Serial No.     |	Pin no. / Name |	Pin no. / Name            |
+|:-------------: | :-------------: | :------------:             |
+|     1.         |	NET            |	Attached a Helical antenna|
+|     2.	       |  VCC            |	5V                        |
+|     3.	       |  RST            |	None                      |
+|     4.         |	RXD            |	D2 of the Arduino         |
+|     5.	       |  TXD	           | D3 of the Arduino          |
+|     6.         |	GND	           | GND                        |
 
 </div>
